@@ -1,3 +1,3 @@
 FROM ubuntu/apache2
-ADD . /var/www/html/index.html 
+ADD . /var/www/html/
 CMD apachectl -D FOREGROUND 
