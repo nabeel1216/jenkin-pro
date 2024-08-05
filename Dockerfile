@@ -1,3 +1,3 @@
-FROM ubuntu/apache2
+FROM nginx
 ADD . /var/www/html/
-CMD apachectl -D FOREGROUND 
+cmd ["nginx", "-g", "daemon off;"]
